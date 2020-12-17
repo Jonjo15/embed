@@ -1,16 +1,152 @@
+/* reset */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* custom */
 li {
   list-style: none;
   display: inline;
+  margin-top: 13px;
 }
 nav {
   position: relative;
   display: flex;
+  padding-top: 13px;
+  padding: 0;
   margin-bottom: 50px;
+  background-color: white;
+  height: 45px;
 }
 
 .left,
 .right {
   width: 30%;
+  margin-top: 13px;
+}
+.left {
+  position: absolute;
+  left: 8%;
 }
 .right {
   position: absolute;
@@ -18,11 +154,15 @@ nav {
 }
 form {
   margin-top: 13px;
+  width: 45%;
   position: absolute;
-  left: 41%;
+  left: 30%;
+}
+form input {
+  width: 70%;
 }
 iframe {
-  width: 800px;
+  width: 840px;
   margin-right: 50px;
   height: 560px;
 }
@@ -32,14 +172,27 @@ iframe {
   display: grid;
   grid-template-columns: 70% 30%;
 }
+body {
+  background-color: rgba(0, 0, 0, 0.04);
+}
 .side-bar-header span {
-  margin-left: 35px;
+  margin-left: 8px;
+}
+li button {
+  margin-left: 10px;
+  width: 60px;
+}
+h1 {
+  font-weight: 400;
+  width: 40%;
 }
 .poster img {
   display: inline;
-  width: 66px;
-  height: 66px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 .side-thumbnails li {
   display: list-item;
@@ -48,4 +201,36 @@ iframe {
 li img {
   width: 168px;
   height: 94px;
+}
+.video-buttons {
+  float: right;
+  margin-right: 40px;
+}
+.views {
+  border-bottom: 1px solid grey;
+  height: 80px;
+}
+.poster {
+  position: relative;
+}
+.profile {
+  position: relative;
+  display: flex;
+  width: 300px;
+}
+.profile div {
+  margin-top: 35px;
+  margin-left: 15px;
+}
+.subscribe {
+  position: absolute;
+  float: right;
+  top: 20px;
+  left: 90%;
+}
+.description {
+  margin-bottom: 10px;
+}
+.sidebar {
+  margin-left: 80px;
 }
